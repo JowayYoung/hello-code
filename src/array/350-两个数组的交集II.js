@@ -28,7 +28,7 @@ function Intersect1(nums1 = [], nums2 = []) {
 	return nums2.slice(0, p);
 }
 
-console.log(Intersect1([4, 9, 5, 1, 9], [9, 4, 9, 8, 4, 1]));
+console.log(Intersect1([4, 9, 5], [9, 4, 9, 8, 4]));
 
 // 已排序好
 function Intersect2(nums1 = [], nums2 = []) {
