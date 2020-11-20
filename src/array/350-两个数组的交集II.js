@@ -10,26 +10,25 @@ function Intersect1(nums1 = [], nums2 = []) {
 	let p = 0;
 	const map = {};
 	// 先统计nums1生成map
-	for (const v of nums1) {
+	nums1.forEach(v => {
 		if (map[v]) {
 			map[v]++; // 再次出现累加1
 		} else {
 			map[v] = 1; // 首次出现记录1
 		}
-	}
-	// 根据map生成res
-	for (const v of nums2) {
+	});
+	// 根据map移除nums2里的非交集
+	nums2.forEach(v => {
 		if (map[v]) { // 在哈希表中存在
 			nums2[p] = v; // 在指针累加前操作
 			map[v]--; // 匹配一个删除一个
 			p++;
 		}
-	}
+	});
 	return nums2.slice(0, p);
 }
 
-console.log(Intersect1([1, 2, 2, 1], [2, 2]));
-console.log(Intersect1([4, 9, 5], [9, 4, 9, 8, 4]));
+console.log(Intersect1([4, 9, 5, 1, 9], [9, 4, 9, 8, 4, 1]));
 
 // 已排序好
 function Intersect2(nums1 = [], nums2 = []) {
