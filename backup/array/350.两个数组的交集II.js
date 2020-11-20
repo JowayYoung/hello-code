@@ -1,5 +1,5 @@
 /**
- * @name 350.两个数组的交集
+ * @name 350.两个数组的交集II
  * @param {number[]} [nums1=[]]
  * @param {number[]} [nums2=[]]
  * @method 哈希表 双指针
