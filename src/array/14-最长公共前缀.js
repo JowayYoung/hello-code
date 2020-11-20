@@ -7,12 +7,11 @@
 function LongestCommonPrefix(strs = []) {
 	if (!strs.length) return "";
 	let prefix = strs[0];
-	for (let i = 0; i < strs.length; i++) {
-		const item = strs[i];
-		while (prefix.length && !item.includes(prefix)) {
+	strs.forEach(v => {
+		while (prefix.length && !v.includes(prefix)) {
 			prefix = prefix.slice(0, prefix.length - 1);
 		}
-	}
+	});
 	return prefix;
 }
 
