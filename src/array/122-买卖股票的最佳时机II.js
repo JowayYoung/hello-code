@@ -1,7 +1,7 @@
 /**
  * @name 122.买卖股票的最佳时机
  * @param {number[]} [nums=[]]
- * @method 累加所有上升空间
+ * @method 累加所有上升空间(相邻成员差值为正数)
  * @return {number}
  */
 function MaxProfit(nums = []) {

@@ -2,17 +2,18 @@
  * @name 27.移除元素
  * @param {number[]} [nums=[]]
  * @param {number} val
+ * @method 若成员等于目标值则原地删除
  * @return {number}
  */
 function RemoveElement(nums = [], val = 0) {
-	if (!nums.length) return 0;
+	if (!nums.length) return [];
 	for (let i = 0; i < nums.length; i++) {
 		if (nums[i] === val) {
 			nums.splice(i, 1);
-			i--; // for循环中移除元素记得递减索引
+			i--; // for循环中移除元素必须递减索引
 		}
 	}
 	return nums.length;
 }
 
-console.log("No.27 →", RemoveElement([3, 2, 2, 3], 3));
+console.log(RemoveElement([3, 2, 2, 3], 3));
