@@ -2,8 +2,8 @@
  * @name 27.移除元素
  * @param {number[]} [nums=[]]
  * @param {number} [val=0]
- * @method 若当前成员等于目标值则原地删除当前成员
  * @return {number}
+ * @method 若当前成员等于目标值则原地删除当前成员
  */
 function RemoveElement(nums = [], val = 0) {
 	if (!nums.length) return [];

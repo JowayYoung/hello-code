@@ -2,8 +2,8 @@
  * @name 189.旋转数组
  * @param {number[]} [nums=[]]
  * @param {number} [p=0]
- * @method 以p为分割点切分数组，将前后两份互换位置
  * @return {number[]}
+ * @method 以p为分割点切分数组，将前后两份互换位置
  */
 function Rotate(nums = [], p = 0) {
 	if (!nums.length) return [];

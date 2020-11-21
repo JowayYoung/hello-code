@@ -1,8 +1,8 @@
 /**
  * @name 26.删除排序数组中的重复项
  * @param {number[]} [nums=[]]
- * @method 若当前成员与下一成员相等则原地删除下一成员
  * @return {number}
+ * @method 若当前成员与下一成员相等则原地删除下一成员
  */
 function RemoveDuplicates(nums = []) {
 	if (!nums.length) return 0;

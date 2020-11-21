@@ -2,8 +2,8 @@
  * @name 350.两个数组的交集II
  * @param {number[]} [nums1=[]]
  * @param {number[]} [nums2=[]]
- * @method 使用哈希表存储第一数组成员的次数，遍历第二数组成员，若哈希表存在成员记录则在指针位置上赋值成员，并将累减成员记录和累加指针
  * @return {number[]}
+ * @method 使用哈希表保存第一数组成员的次数，遍历第二数组成员，若哈希表存在成员记录则在指针位置上赋值成员，并将累减成员记录和累加指针
  */
 function Intersect1(nums1 = [], nums2 = []) {
 	if (!nums1.length || !nums2.length) return [];
