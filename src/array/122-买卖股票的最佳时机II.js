@@ -2,7 +2,8 @@
  * @name 122.买卖股票的最佳时机
  * @param {number[]} [nums=[]]
  * @return {number}
- * @method 累加所有上升空间(相邻成员差值为正数)
+ * @method 累加所有上升空间
+ * @summary 差值(相邻成员差值为正数)
  */
 function MaxProfit(nums = []) {
 	if (nums.length < 2) return 0;

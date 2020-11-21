@@ -4,6 +4,7 @@
  * @param {number[]} [nums2=[]]
  * @return {number[]}
  * @method 使用哈希表保存第一数组成员的次数，遍历第二数组成员，若哈希表存在成员记录则在指针位置上赋值成员，并将累减成员记录和累加指针
+ * @summary 哈希表，双指针，三指针，原数组充当容器节省内存空间
  */
 function Intersect1(nums1 = [], nums2 = []) {
 	if (!nums1.length || !nums2.length) return [];
@@ -30,7 +31,7 @@ function Intersect1(nums1 = [], nums2 = []) {
 
 console.log(Intersect1([4, 9, 5], [9, 4, 9, 8, 4]));
 
-// 已顺序排序：哈希表，双指针，原数组充当容器节省内存空间
+// 已顺序排序
 function Intersect2(nums1 = [], nums2 = []) {
 	if (!nums1.length || !nums2.length) return [];
 	let p1 = 0;
