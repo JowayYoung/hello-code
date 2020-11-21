@@ -12,19 +12,18 @@ function ThreeSum(nums = []) {
 	for (let i = 0; i < _nums.length; i++) {
 		let left = i + 1;
 		let right = _nums.length - 1;
-		const item = _nums[i];
-		const target = 0 - item;
-		if (item > 0) {
+		const target = 0 - _nums[i];
+		if (_nums[i] > 0) {
 			break;
 		}
-		if (i === 0 || item !== _nums[i - 1]) {
+		if (i === 0 || _nums[i] !== _nums[i - 1]) {
 			while (left < right) {
 				if (_nums[left] + _nums[right] < target) {
 					left++; // 两者之和小于0则left太小得往右移
 				} else if (_nums[left] + _nums[right] > target) {
 					right--; // 两者之和大于0则right太大得往左移
 				} else {
-					res.push([item, _nums[left], _nums[right]]);
+					res.push([_nums[i], _nums[left], _nums[right]]);
 					while (left < right && _nums[left] === nums[left + 1]) left++; // 相邻成员相同则跳过
 					while (left < right && _nums[right] === nums[right - 1]) right--; // 相邻成员相同则跳过
 					left++;

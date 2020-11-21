@@ -7,8 +7,7 @@
 function PlusOne(nums = []) {
 	if (!nums.length) return [];
 	let bit = 1;
-	const max = nums.length - 1;
-	for (let i = max; i >= 0; i--) {
+	for (let i = nums.length - 1; i >= 0; i--) {
 		nums[i] += bit;
 		if (nums[i] === 10) {
 			nums[i] = 0;
