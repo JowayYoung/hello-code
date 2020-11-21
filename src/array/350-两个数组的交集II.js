@@ -2,7 +2,7 @@
  * @name 350.两个数组的交集II
  * @param {number[]} [nums1=[]]
  * @param {number[]} [nums2=[]]
- * @method 哈希表 双指针 原数组充当容器(节省内存空间)
+ * @method 使用哈希表存储第一数组成员的次数，遍历第二数组成员，若哈希表存在成员记录则在指针位置上赋值成员，并将累减成员记录和累加指针
  * @return {number[]}
  */
 function Intersect1(nums1 = [], nums2 = []) {
@@ -30,7 +30,7 @@ function Intersect1(nums1 = [], nums2 = []) {
 
 console.log(Intersect1([4, 9, 5], [9, 4, 9, 8, 4]));
 
-// 已排序好
+// 已顺序排序：哈希表，双指针，原数组充当容器节省内存空间
 function Intersect2(nums1 = [], nums2 = []) {
 	if (!nums1.length || !nums2.length) return [];
 	let p1 = 0;
