@@ -1,9 +1,9 @@
 /**
  * @name 141.环形链表
- * @param {object} [list1=null]
+ * @param {object} [list=null]
  * @return {boolean}
  * @method 初始快指针和慢指针，慢指针每次走一步，快指针每次走两步，若相遇则表示链表存在闭环
- * @summary 双指针 快慢指针
+ * @summary 双指针(快慢指针)
  */
 function HasCycle(list = null) {
 	if (!list || !list.next) return false;

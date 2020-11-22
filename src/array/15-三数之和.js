@@ -10,12 +10,10 @@ function ThreeSum(nums = []) {
 	const res = [];
 	const _nums = nums.sort((a, b) => a - b);
 	for (let i = 0; i < _nums.length; i++) {
+		const target = 0 - _nums[i];
 		let left = i + 1;
 		let right = _nums.length - 1;
-		const target = 0 - _nums[i];
-		if (_nums[i] > 0) {
-			break;
-		}
+		if (_nums[i] > 0) break;
 		if (i === 0 || _nums[i] !== _nums[i - 1]) {
 			while (left < right) {
 				if (_nums[left] + _nums[right] < target) {

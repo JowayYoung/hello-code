@@ -8,8 +8,8 @@
  */
 function Intersect1(nums1 = [], nums2 = []) {
 	if (!nums1.length || !nums2.length) return [];
-	let p = 0;
 	const map = {};
+	let p = 0;
 	// 先统计nums1生成map
 	nums1.forEach(v => {
 		if (map[v]) {
@@ -34,11 +34,11 @@ console.log(Intersect1([4, 9, 5], [9, 4, 9, 8, 4]));
 // 已顺序排序
 function Intersect2(nums1 = [], nums2 = []) {
 	if (!nums1.length || !nums2.length) return [];
+	const _nums1 = nums1.sort((a, b) => a - b); // 假设数组已排序，如何优化
+	const _nums2 = nums2.sort((a, b) => a - b); // 假设数组已排序，如何优化
 	let p1 = 0;
 	let p2 = 0;
 	let p3 = 0;
-	const _nums1 = nums1.sort((a, b) => a - b); // 假设数组已排序，如何优化
-	const _nums2 = nums2.sort((a, b) => a - b); // 假设数组已排序，如何优化
 	// 比较双指针的元素是否相等，相等则双指针累加1，不等则较小元素的指针累加1
 	while (p1 < _nums1.length && p2 < _nums2.length) {
 		if (_nums1[p1] < _nums2[p2]) {

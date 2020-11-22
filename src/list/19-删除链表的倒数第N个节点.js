@@ -3,7 +3,7 @@
  * @param {object} [list=null]
  * @param {number} [n=0]
  * @return {object}
- * @method 初始哨兵节点、cur指针(指向哨兵节点)、pre指针(指向null)和索引，遍历链表，若索引大于n-1则同时移动cur和pre，若遍历遇到null则cur指向待删除节点
+ * @method 初始哨兵节点、cur指针(指向哨兵节点)、pre指针(指向null)和索引，遍历链表，若索引大于[n-1]则同时移动cur和pre，若遍历遇到null则cur指向待删除节点
  * @summary 哨兵节点 双指针 索引(递增遍历链表)
  */
 function RemoveNthFromEnd(list = null, n = 0) {
@@ -21,7 +21,7 @@ function RemoveNthFromEnd(list = null, n = 0) {
 		list = list.next;
 		i++;
 	}
-	pre.next = pre.next.next;
+	pre.next = pre.next.next; // 删除指定节点
 	return head.next;
 }
 

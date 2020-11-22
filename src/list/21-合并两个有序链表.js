@@ -3,7 +3,7 @@
  * @param {object} [list1=null]
  * @param {object} [list2=null]
  * @return {object}
- * @method 初始一个指针来回穿梭两个链表，串联较小节点，指针向后移动，直至其中一个链表串完再串剩下链表的节点
+ * @method 初始单指针来回穿梭两个链表，串联较小节点，指针向后移动，直至其中一个链表串完再串剩下链表的节点
  * @summary 哨兵节点 单指针
  */
 function MergeTwoLists(list1 = null, list2 = null) {
@@ -19,7 +19,7 @@ function MergeTwoLists(list1 = null, list2 = null) {
 			cur.next = list2;
 			list2 = list2.next;
 		}
-		cur = cur.next; // 指针串联一个节点并向后移动
+		cur = cur.next; // 指针串联节点
 	}
 	if (list1 !== null) {
 		cur.next = list1;
