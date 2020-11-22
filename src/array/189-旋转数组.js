@@ -4,6 +4,7 @@
  * @param {number} [p=0]
  * @return {number[]}
  * @method 以p为分割点切分数组，将前后两份互换位置
+ * @summary 分割点
  */
 function Rotate(nums = [], p = 0) {
 	if (!nums.length) return [];

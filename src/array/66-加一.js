@@ -3,6 +3,7 @@
  * @param {number[]} [nums=[]]
  * @return {number[]}
  * @method 初始进位为1，从末位成员开始累加进位，若累加值等于10则初始成员为0并保持进位为1，否则初始进位为0，还需对首位成员判断是否等于10
+ * @summary 进位
  */
 function PlusOne(nums = []) {
 	if (!nums.length) return [];

@@ -3,8 +3,8 @@
  * @param {object} [list=null]
  * @param {number} [n=0]
  * @return {object}
- * @method 初始哨兵节点、cur指针(指向哨兵节点)、pre指针(指向null)和索引，遍历链表，若索引大于[n-1]则同时移动cur和pre，若遍历遇到null则cur指向待删除节点
- * @summary 哨兵节点 双指针 索引(递增遍历链表)
+ * @method 初始哨兵节点、cur指针(指向哨兵节点)和pre指针(指向null)，遍历链表，若索引大于[n-1]则同时移动cur和pre，若遍历遇到null则pre指向待删除节点
+ * @summary 哨兵节点，双指针(记录前后位置)，索引(遍历递增)
  */
 function RemoveNthFromEnd(list = null, n = 0) {
 	if (!list || !list.next || n < 2) return null;

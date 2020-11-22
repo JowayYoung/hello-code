@@ -3,8 +3,8 @@
  * @param {object} [list1=null]
  * @param {object} [list2=null]
  * @return {object}
- * @method 初始哨兵节点
- * @summary 哨兵节点 进位
+ * @method 初始哨兵节点和单指针，使用新链表保存两个链表同位相加的结果(每次相加得加上进位)并记录进位
+ * @summary 哨兵节点，进位
  */
 function AddTwoNumbers(list1 = {}, list2 = {}) {
 	if (!list1 || !list2 || !list1.next || !list2.next) return null;

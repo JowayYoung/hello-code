@@ -4,6 +4,7 @@
  * @param {number} [val=0]
  * @return {number}
  * @method 若当前成员等于目标值则原地删除当前成员
+ * @summary 原数组操作(节省内存空间)
  */
 function RemoveElement(nums = [], val = 0) {
 	if (!nums.length) return [];

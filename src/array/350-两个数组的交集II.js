@@ -3,8 +3,8 @@
  * @param {number[]} [nums1=[]]
  * @param {number[]} [nums2=[]]
  * @return {number[]}
- * @method 使用哈希表保存第一数组成员的次数，遍历第二数组成员，若哈希表存在成员记录则在指针位置上赋值成员，并将累减成员记录和累加指针
- * @summary 哈希表，双指针，三指针，原数组充当容器节省内存空间
+ * @method 使用哈希表保存第一数组成员的次数，遍历第二数组成员，若哈希表存在成员记录则在指针位置上赋值成员并累减成员记录和累加指针
+ * @summary 哈希表，单指针，三指针，原数组操作(节省内存空间)
  */
 function Intersect1(nums1 = [], nums2 = []) {
 	if (!nums1.length || !nums2.length) return [];

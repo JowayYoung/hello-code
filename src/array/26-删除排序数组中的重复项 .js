@@ -3,6 +3,7 @@
  * @param {number[]} [nums=[]]
  * @return {number}
  * @method 若当前成员与下一成员相等则原地删除下一成员
+ * @summary 原数组操作(节省内存空间)
  */
 function RemoveDuplicates(nums = []) {
 	if (!nums.length) return 0;
