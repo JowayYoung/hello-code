@@ -1,12 +1,12 @@
 /**
  * @name 21.合并两个有序链表
- * @param {object} [list1={}]
- * @param {object} [list2={}]
+ * @param {object} [list1=null]
+ * @param {object} [list2=null]
  * @return {object}
  * @method 初始一个指针来回穿梭两个链表，串联较小节点，指针向后移动，直至其中一个链表串完再串剩下链表的节点
  * @summary 哨兵节点 单指针
  */
-function MergeTwoLists(list1, list2) {
+function MergeTwoLists(list1 = null, list2 = null) {
 	if (!list1 || !list2 || !list1.next || !list2.next) return null;
 	const head = new ListNode();
 	let cur = head;
@@ -21,7 +21,12 @@ function MergeTwoLists(list1, list2) {
 		}
 		cur = cur.next; // 指针串联一个节点并向后移动
 	}
-	cur.next = list1 === null ? list2 : list1; // 处理链表不等长的情况
+	if (list1 !== null) {
+		cur.next = list1;
+	}
+	if (list2 !== null) {
+		cur.next = list2;
+	}
 	return head.next;
 }
 
