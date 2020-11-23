@@ -6,7 +6,7 @@
  * @method 初始哨兵节点和单指针，使用新链表保存两个链表同位相加的结果(每次相加得加上进位)并记录进位
  * @summary 哨兵节点，进位
  */
-function AddTwoNumbers(list1 = {}, list2 = {}) {
+function AddTwoNumbers(list1 = null, list2 = null) {
 	if (!list1 || !list2 || !list1.next || !list2.next) return null;
 	const head = new ListNode(0);
 	let cur = head;

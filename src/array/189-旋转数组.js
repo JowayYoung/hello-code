@@ -8,7 +8,9 @@
  */
 function Rotate(nums = [], p = 0) {
 	if (!nums.length) return [];
-	return [...nums.slice(-p), ...nums.slice(0, -p)];
+	const before = nums.slice(-p);
+	const after = nums.slice(0, -p);
+	return before.concat(after);
 }
 
 console.log(Rotate([1, 2, 3, 4, 5, 6, 7], 3));

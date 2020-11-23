@@ -2,7 +2,7 @@
  * @name 15.三数之和
  * @param {number[]} [nums=[]]
  * @return {number[]}
- * @method 初始三指针分别为首位(index)、次位(left)和末尾(right)，每次循环多次移动left和right并计算left+right是否等于0(若)，循环完毕累加index
+ * @method 初始三指针分别为首位(i)、次位(left)和末尾(right)，每次循环体多次移动left和right并计算[left+right]是否等于0，循环完毕累加i
  * @summary 三指针，差值(left+right=0，若两者之和小于0则left太小得向右移，若两者之和大于0则right太大得向左移)
  */
 function ThreeSum(nums = []) {
