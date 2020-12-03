@@ -2,7 +2,7 @@
  * @name 300.最长上升子序列
  * @param {number[]} [nums=[]]
  * @return {number}
- * @method dp[i]=max(dp[j]+1,dp[k]+1,dp[l]+1,...)
+ * @method dp[i]=max(dp[j]+1,dp[k]+1,dp[l]+1,...) [i>j,k,l...]
  * @summary 状态转移方程
  */
 function LengthOfLIS(nums = []) {

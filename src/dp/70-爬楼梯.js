@@ -2,7 +2,7 @@
  * @name 70.爬楼梯
  * @param {number} [n=0]
  * @return {number}
- * @method dp[n]=dp[n-1]+dp[n-2]
+ * @method dp[i]=dp[i-1]+dp[i-2]
  * @summary 状态转移方程
  */
 function ClimbStairs(n = 0) {

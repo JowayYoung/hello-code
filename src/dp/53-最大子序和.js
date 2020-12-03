@@ -2,7 +2,7 @@
  * @name 53.最大子序和
  * @param {number[]} [nums=[]]
  * @return {number}
- * @method max(dp[0],dp[1],...,d[i-1],dp[i])
+ * @method dp[i]=max(dp[0],dp[1],...,d[i-1],dp[i])
  * @summary 状态转移方程
  */
 function MaxSubArray(nums = []) {
