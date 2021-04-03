@@ -1,0 +1,14 @@
+/* padding-top/bottom的百分比值是根据容器width计算 */
+.box {
+	position: relative;
+	padding-top: 75%;
+	width: 100%;
+	height: 0;
+}
+.wrap {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
