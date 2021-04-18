@@ -1,0 +1,36 @@
+{
+	"name": "mini-react",
+	"version": "1.0.0",
+	"description": "mini-react",
+	"keywords": [
+		"react"
+	],
+	"author": {
+		"name": "Joway Young",
+		"phone": "18819249731",
+		"email": "young.joway@aliyun.com"
+	},
+	"homepage": "https://github.com/JowayYoung",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/JowayYoung/mini-frame"
+	},
+	"license": "MIT",
+	"scripts": {
+		"remove": "rimraf package-lock.json yarn.lock node_modules",
+		"test": "webpack --config test/webpack.config.js"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@babel/core": "7.11.4",
+		"@babel/plugin-transform-react-jsx": "7.10.4",
+		"@babel/preset-env": "7.11.0",
+		"babel-loader": "8.1.0",
+		"webpack": "4.44.1",
+		"webpack-cli": "3.3.12"
+	},
+	"engines": {
+		"node": ">= 10.0.0",
+		"npm": ">= 5.6.0"
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"name": "mini-webpack",
+	"version": "1.0.0",
+	"description": "mini-webpack",
+	"keywords": [
+		"webpack"
+	],
+	"author": {
+		"name": "Joway Young",
+		"phone": "18819249731",
+		"email": "young.joway@aliyun.com"
+	},
+	"homepage": "https://github.com/JowayYoung",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/JowayYoung/mini-frame"
+	},
+	"license": "MIT",
+	"scripts": {
+		"remove": "rimraf package-lock.json yarn.lock node_modules"
+	},
+	"dependencies": {
+		"@babel/core": "7.11.1",
+		"@babel/parser": "7.11.2",
+		"@babel/preset-env": "7.11.0",
+		"@babel/traverse": "7.11.0"
+	},
+	"devDependencies": {},
+	"engines": {
+		"node": ">= 10.0.0",
+		"npm": ">= 5.6.0"
+	}
+}
