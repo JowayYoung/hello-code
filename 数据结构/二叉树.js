@@ -18,7 +18,7 @@ c.right = f;
 
 console.log(JSON.stringify(tree, null, 2));
 
-// 先序遍历：根结点 → 左子树 → 右子树
+// 先序遍历：根结点→左子树→右子树
 function Preorder(root) {
 	if (!root) return;
 	console.log("当前遍历的结点值：", root.val);
@@ -26,7 +26,7 @@ function Preorder(root) {
 	Preorder(root.right);
 }
 
-// 中序遍历：左子树 → 根结点 → 右子树
+// 中序遍历：左子树→根结点→右子树
 function Inorder(root) {
 	if (!root) return;
 	Inorder(root.left);
@@ -34,7 +34,7 @@ function Inorder(root) {
 	Inorder(root.right);
 }
 
-// 后序遍历：左子树 → 右子树 → 根结点
+// 后序遍历：左子树→右子树→根结点
 function Postorder(root) {
 	if (!root) return;
 	Postorder(root.left);
